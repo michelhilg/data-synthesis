@@ -1,3 +1,13 @@
+"""
+Conventional Augmentation Pipeline
+
+Implementation
+
+The purpose of this notebook is to implement the conventional augmentation pipeline as outlined in sections 3.3.0 of the bachelor thesis.
+
+The augmentation pipeline applies basic spatial and color transformations on the raw dataset.
+"""
+
 import torchvision.transforms as transforms
 import os
 from torchvision.utils import save_image
@@ -34,8 +44,8 @@ root_dir = []
 datasets = []
 
 for i in range(1,11):
-    labels_file.append('/home/operation/data_synthesis_michel_bt/gc10-det/02_raw_train/' + discrete_class[i] + '.csv')
-    root_dir.append('/home/operation/data_synthesis_michel_bt/gc10-det/02_raw_train/images/' + discrete_class[i])
+    labels_file.append('path/to/raw/training/root/folder' + discrete_class[i] + '.csv')
+    root_dir.append('path/to/raw/training/images' + discrete_class[i])
     datasets.append(CustomDataset(labels_file=labels_file[i-1], root_dir=root_dir[i-1]))
     
 #Appling the augmentation
@@ -54,13 +64,12 @@ def applyAugmentation(dataset, root_path, aug_tranforms, to_tensor, num_instance
     return print('Done!')
 
 to_tensor = transforms.ToTensor()
-root_path = '/home/operation/data_synthesis_michel_bt/gc10-det/03_augmented/'
+augmented_path = '/root/path/to/augmented/images'
 num_instances = 1000
 
 for i in range(10):
-    applyAugmentation(datasets[i], root_path, aug_transforms, to_tensor, num_instances)
+    applyAugmentation(datasets[i], augmented_path, aug_transforms, to_tensor, num_instances)
 
 #Generating labels
-augmented_path = 'gc10-det/03_augmented/1000/'
 general_csv(discrete_class=discrete_class, data_path=augmented_path)
 class_csv(discrete_class=discrete_class, data_path=augmented_path)

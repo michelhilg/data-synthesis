@@ -1,3 +1,11 @@
+"""
+Custom Dataset
+
+Implementation
+
+Deifne a custom PyTorch dataset for data manipulation.
+"""
+
 from PIL import Image
 import os
 from PIL import Image
