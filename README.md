@@ -15,12 +15,12 @@ The repository adheres to the cookie cutter structure, which is defined as follo
 |   |-- models.md
 |-- notebooks/
 |   |-- 03_research_desing/
-|   |   |-- research-desing-notebooks.ipynb
+|   |   |-- thesis_section-description.ipynb
         .
         .
         .
 |   |-- 04_results
-|   |   |-- results-notebooks.ipynb
+|   |   |-- thesis_section-description.ipynb
         .
         .
         .
@@ -64,6 +64,26 @@ The repository adheres to the cookie cutter structure, which is defined as follo
 - The `LICENSE` has information about the use of this content.
 
 - The `README.md` file (this file) provides an overview and instructions for using the repository.
+
+## Usage
+
+The recomand approach to use this repository is detailed in the following steps:
+
+1. Clone the repository to your local machine:
+
+```
+git clone https://github.com/michelhilg/data-synthesis.git
+```
+2. Sign in or create a Kaggle account in this [link](https://www.kaggle.com). Kaggle is an open-source platform for data science projects that provides a powerful cloud computing environment, offering 30 free GPU hours per week.
+
+3. Connect your cloned files to your Kaggle account. This can be done either by manually uploading the desired notebooks or by using the Kaggle API.
+
+4. Add the necessary data on Kaggle to run the desired notebook using the link provide by the `data/data.md` file:
+
+    * [Link to datasets](https://www.kaggle.com/michelhilgemberg/datasets?scroll=true)
+
+5. Follow the instructions within the notebook to execute the code and reproduce the experiments conducted in the thesis. Please note that when running the notebooks on Kaggle, there is no need for a `requirements.txt` file as Kaggle automatically manages the required packages.
+
 
 ## Additional Resources
 
