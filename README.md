@@ -8,6 +8,7 @@ This repository contains the code and information related to a bachelor thesis t
 
 The repository has the following structure:
 
+```
 |-- notebooks/
 |   |-- data_preparation.ipynb
 |   |-- model_training.ipynb
@@ -27,3 +28,4 @@ The repository has the following structure:
 |   |   |-- model_weights.h5
 |   |   |-- model_architecture.json
 |-- README.md
+```
