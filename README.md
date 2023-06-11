@@ -1,4 +1,4 @@
-# Deep Generative Models for Data Synthesis in Manufacturing
+# Deep Generative Models for Synthetic Image Augmentation in Computer Vision-based Quality Inspection
 
 ## Introduction
 
