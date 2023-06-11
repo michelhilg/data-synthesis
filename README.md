@@ -6,26 +6,38 @@ This repository contains the code and information related to a bachelor thesis t
 
 ## Repository Structure
 
-The repository has the following structure:
+The repository adheres to the cookie cutter structure, which is defined as follows:
 
 ```
-|-- notebooks/
-|   |-- data_preparation.ipynb
-|   |-- model_training.ipynb
-|   |-- data_augmentation.ipynb
 |-- data/
-|   |-- dataset_1/
-|   |   |-- images/
-|   |   |-- annotations/
-|   |-- dataset_2/
-|   |   |-- images/
-|   |   |-- annotations/
+|   |-- data.md
 |-- models/
-|   |-- model_1/
-|   |   |-- model_weights.h5
-|   |   |-- model_architecture.json
-|   |-- model_2/
-|   |   |-- model_weights.h5
-|   |   |-- model_architecture.json
+|   |-- models.md
+|-- notebooks/
+|   |-- 03_research_desing/
+|   |   |-- research-desing-notebooks.ipynb
+        .
+        .
+        .
+|   |-- 04_results
+|   |   |-- results-notebooks.ipynb
+        .
+        .
+        .
+|-- reports/
+|   |-- figures/
+|   |   |-- thesis-figures.drawio
+        .
+        .
+        .
+|   |-- bachelor-thesis.pdf
+|-- src/
+|   |-- data/
+|   |   |-- data-related-python-scripts.py
+        .
+        .
+        .
+|-- .gitignore
+|-- LICENSE
 |-- README.md
 ```
