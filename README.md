@@ -42,9 +42,9 @@ The repository adheres to the cookie cutter structure, which is defined as follo
 |-- README.md
 ```
 
-- The `notebooks` directory contains Jupyter notebooks used in the thesis. They follows a naming conventional as:
+- The `notebooks` directory contains Jupyter notebooks used in the thesis, which are accompanied by source references. These notebooks follow a naming convention as:
 
-    * ```
+    ```
     parent_folder_as_thesis_chapter/thesis_section-description.ipynb
 
     ```
@@ -64,3 +64,17 @@ The repository adheres to the cookie cutter structure, which is defined as follo
 - The `LICENSE` has information about the use of this content.
 
 - The `README.md` file (this file) provides an overview and instructions for using the repository.
+
+## Additional Resources
+
+For additional information and detailed insights into the thesis, please refer to the full text of the bachelor thesis document.
+
+## License
+
+The code in this repository is provided under the MIT License.
+
+## Acknowledgments
+
+I would like to express my gratitude to all individuals and organizations that provided assistance and support during the research and development of this study.
+
+Thank you! Obrigado! Danke!
